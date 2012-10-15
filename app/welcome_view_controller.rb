@@ -1,19 +1,9 @@
-class WelcomeViewController < UIViewController
+class WelcomeViewController < MainViewController
 
-  def viewWillAppear(animated)
-    super
+  attr_accessor :label
 
-    self.slidingViewController.underLeftViewController = self.storyboard.instantiateViewControllerWithIdentifier('Menu')
-    self.view.addGestureRecognizer(self.slidingViewController.panGesture)
-    self.slidingViewController.setAnchorRightRevealAmount 280.0
-
-    view.layer.shadowOpacity = 0.75
-    self.view.layer.shadowRadius = 10.0
-    self.view.layer.shadowColor = UIColor.blackColor.CGColor;
-  end
-
-  def revealMenu(sender)
- 	  self.slidingViewController.anchorTopViewTo ECRight
+  def unwindFromConfirmationForm(storyboard)
+    @label.text = 'And your back'
   end
 
 end

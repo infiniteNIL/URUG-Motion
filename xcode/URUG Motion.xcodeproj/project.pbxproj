@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC07C122162CA4000001DC7C /* ByHandViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC07C121162CA4000001DC7C /* ByHandViewController.m */; };
+		DC1CA8731628CFA40017971D /* NibViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC1CA8721628CFA40017971D /* NibViewController.m */; };
+		DC1CA8791628DD0D0017971D /* ModalNibViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC1CA8771628DD0D0017971D /* ModalNibViewController.xib */; };
+		DC1CA87E1628DD860017971D /* ModalNibViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC1CA87D1628DD860017971D /* ModalNibViewController.m */; };
 		DC2D922316261679002C91DA /* list.png in Resources */ = {isa = PBXBuildFile; fileRef = DC2D922116261679002C91DA /* list.png */; };
 		DC2D922416261679002C91DA /* list@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DC2D922216261679002C91DA /* list@2x.png */; };
 		DC2D922816261800002C91DA /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC2D922716261800002C91DA /* WelcomeViewController.m */; };
@@ -21,10 +25,18 @@
 		DC38D3971625EA3700E5D8B2 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DC38D3961625EA3700E5D8B2 /* Default@2x.png */; };
 		DC38D3991625EA3700E5D8B2 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DC38D3981625EA3700E5D8B2 /* Default-568h@2x.png */; };
 		DC38D39C1625EA3700E5D8B2 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC38D39A1625EA3700E5D8B2 /* MainStoryboard.storyboard */; };
-		DC38D3A21625EA3700E5D8B2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC38D3A11625EA3700E5D8B2 /* ViewController.m */; };
+		DC38D3A21625EA3700E5D8B2 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC38D3A11625EA3700E5D8B2 /* MainViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DC07C120162CA4000001DC7C /* ByHandViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ByHandViewController.h; sourceTree = "<group>"; };
+		DC07C121162CA4000001DC7C /* ByHandViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ByHandViewController.m; sourceTree = "<group>"; };
+		DC1CA8701628CF430017971D /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		DC1CA8711628CFA40017971D /* NibViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NibViewController.h; sourceTree = "<group>"; };
+		DC1CA8721628CFA40017971D /* NibViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NibViewController.m; sourceTree = "<group>"; };
+		DC1CA8781628DD0D0017971D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = ../resources/en.lproj/ModalNibViewController.xib; sourceTree = "<group>"; };
+		DC1CA87C1628DD860017971D /* ModalNibViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModalNibViewController.h; sourceTree = "<group>"; };
+		DC1CA87D1628DD860017971D /* ModalNibViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModalNibViewController.m; sourceTree = "<group>"; };
 		DC2D922116261679002C91DA /* list.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = list.png; path = ../../resources/list.png; sourceTree = "<group>"; };
 		DC2D922216261679002C91DA /* list@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "list@2x.png"; path = "../../resources/list@2x.png"; sourceTree = "<group>"; };
 		DC2D922616261800002C91DA /* WelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeViewController.h; sourceTree = "<group>"; };
@@ -45,8 +57,7 @@
 		DC38D3961625EA3700E5D8B2 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		DC38D3981625EA3700E5D8B2 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		DC38D39B1625EA3700E5D8B2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		DC38D3A01625EA3700E5D8B2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		DC38D3A11625EA3700E5D8B2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DC38D3A11625EA3700E5D8B2 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +74,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DC1CA87A1628DD420017971D /* Nib */ = {
+			isa = PBXGroup;
+			children = (
+				DC1CA8711628CFA40017971D /* NibViewController.h */,
+				DC1CA8721628CFA40017971D /* NibViewController.m */,
+				DC1CA8771628DD0D0017971D /* ModalNibViewController.xib */,
+				DC1CA87C1628DD860017971D /* ModalNibViewController.h */,
+				DC1CA87D1628DD860017971D /* ModalNibViewController.m */,
+			);
+			name = Nib;
+			sourceTree = "<group>";
+		};
+		DC1CA87B1628DD4C0017971D /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				DC38D39A1625EA3700E5D8B2 /* MainStoryboard.storyboard */,
+				DC2D922616261800002C91DA /* WelcomeViewController.h */,
+				DC2D922716261800002C91DA /* WelcomeViewController.m */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
 		DC38D3731625EA3700E5D8B2 = {
 			isa = PBXGroup;
 			children = (
@@ -93,15 +126,16 @@
 		DC38D3881625EA3700E5D8B2 /* URUG Motion */ = {
 			isa = PBXGroup;
 			children = (
+				DC1CA87B1628DD4C0017971D /* Storyboards */,
+				DC1CA87A1628DD420017971D /* Nib */,
 				DC38D3911625EA3700E5D8B2 /* AppDelegate.h */,
 				DC38D3921625EA3700E5D8B2 /* AppDelegate.m */,
-				DC38D39A1625EA3700E5D8B2 /* MainStoryboard.storyboard */,
 				DC2D922916261D63002C91DA /* MenuViewController.h */,
 				DC2D922A16261D63002C91DA /* MenuViewController.m */,
-				DC2D922616261800002C91DA /* WelcomeViewController.h */,
-				DC2D922716261800002C91DA /* WelcomeViewController.m */,
-				DC38D3A01625EA3700E5D8B2 /* ViewController.h */,
-				DC38D3A11625EA3700E5D8B2 /* ViewController.m */,
+				DC1CA8701628CF430017971D /* MainViewController.h */,
+				DC38D3A11625EA3700E5D8B2 /* MainViewController.m */,
+				DC07C120162CA4000001DC7C /* ByHandViewController.h */,
+				DC07C121162CA4000001DC7C /* ByHandViewController.m */,
 				DC38D3891625EA3700E5D8B2 /* Supporting Files */,
 			);
 			path = "URUG Motion";
@@ -181,6 +215,7 @@
 				DC38D39C1625EA3700E5D8B2 /* MainStoryboard.storyboard in Resources */,
 				DC2D922316261679002C91DA /* list.png in Resources */,
 				DC2D922416261679002C91DA /* list@2x.png in Resources */,
+				DC1CA8791628DD0D0017971D /* ModalNibViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,15 +228,27 @@
 			files = (
 				DC38D38F1625EA3700E5D8B2 /* main.m in Sources */,
 				DC38D3931625EA3700E5D8B2 /* AppDelegate.m in Sources */,
-				DC38D3A21625EA3700E5D8B2 /* ViewController.m in Sources */,
+				DC38D3A21625EA3700E5D8B2 /* MainViewController.m in Sources */,
 				DC2D922816261800002C91DA /* WelcomeViewController.m in Sources */,
 				DC2D922B16261D63002C91DA /* MenuViewController.m in Sources */,
+				DC1CA8731628CFA40017971D /* NibViewController.m in Sources */,
+				DC1CA87E1628DD860017971D /* ModalNibViewController.m in Sources */,
+				DC07C122162CA4000001DC7C /* ByHandViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		DC1CA8771628DD0D0017971D /* ModalNibViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC1CA8781628DD0D0017971D /* en */,
+			);
+			name = ModalNibViewController.xib;
+			path = ..;
+			sourceTree = "<group>";
+		};
 		DC38D38B1625EA3700E5D8B2 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
