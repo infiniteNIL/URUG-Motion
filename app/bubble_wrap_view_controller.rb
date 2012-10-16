@@ -1,0 +1,2 @@
+class BubbleWrapViewController < MainViewController
+end

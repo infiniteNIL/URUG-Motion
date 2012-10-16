@@ -2,7 +2,7 @@ class MenuViewController < UITableViewController
 
 	def viewDidLoad
 		super
-		@menuIDs = ['Welcome', 'Nib', 'ByHand', 'Simple']
+		@menuIDs = ['Welcome', 'Nib', 'ByHand', 'Simple', 'BubbleWrap']
 	end
 
 	def	tableView(tableView, didSelectRowAtIndexPath:indexPath)

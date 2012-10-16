@@ -163,6 +163,39 @@
             </objects>
             <point key="canvasLocation" x="1260" y="724"/>
         </scene>
+        <!--Bubble Wrap View Controller-->
+        <scene sceneID="6jO-fS-dhZ">
+            <objects>
+                <viewController storyboardIdentifier="BubbleWrap" useStoryboardIdentifierAsRestorationIdentifier="YES" id="JHC-z0-iIJ" customClass="BubbleWrapViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LBe-at-4aV">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Svc-xT-qYr">
+                                <color key="tintColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <items>
+                                    <navigationItem title="BubbleWrap" id="3bb-fJ-wr9">
+                                        <barButtonItem key="leftBarButtonItem" image="list.png" id="pOw-3q-uaq">
+                                            <connections>
+                                                <action selector="revealMenu:" destination="JHC-z0-iIJ" id="fIe-sU-HXE"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Svc-xT-qYr" firstAttribute="trailing" secondItem="LBe-at-4aV" secondAttribute="trailing" type="default" id="Jbw-pL-fQd"/>
+                            <constraint firstItem="Svc-xT-qYr" firstAttribute="top" secondItem="LBe-at-4aV" secondAttribute="top" type="default" id="YbO-PJ-Q4t"/>
+                            <constraint firstItem="Svc-xT-qYr" firstAttribute="leading" secondItem="LBe-at-4aV" secondAttribute="leading" type="default" id="aTf-dS-lx2"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5eC-Rf-ChP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1732" y="724"/>
+        </scene>
         <!--Menu View Controller-->
         <scene sceneID="Lcl-kK-ngW">
             <objects>
@@ -230,6 +263,24 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="SimpleView" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="zb6-ku-z3Z">
+                                                    <rect key="frame" x="10" y="0.0" width="300" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="W4G-uf-TN9" style="IBUITableViewCellStyleDefault" id="ACK-YJ-P3C">
+                                        <rect key="frame" x="0.0" y="176" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="BubbleWrap" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="W4G-uf-TN9">
                                                     <rect key="frame" x="10" y="0.0" width="300" height="43"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
@@ -318,6 +369,9 @@
         <image name="list.png" width="20" height="14"/>
     </resources>
     <classes>
+        <class className="BubbleWrapViewController" superclassName="MainViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BubbleWrapViewController.h"/>
+        </class>
         <class className="ByHandViewController" superclassName="MainViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ByHandViewController.h"/>
         </class>
@@ -352,6 +406,7 @@
         <class className="WelcomeViewController" superclassName="MainViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/WelcomeViewController.h"/>
             <relationships>
+                <relationship kind="action" name="revealMenu:"/>
                 <relationship kind="action" name="unwindFromConfirmationForm:" candidateClass="UIStoryboardSegue"/>
                 <relationship kind="outlet" name="label" candidateClass="UILabel"/>
             </relationships>

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DC07C122162CA4000001DC7C /* ByHandViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC07C121162CA4000001DC7C /* ByHandViewController.m */; };
+		DC07C12A162DEEA40001DC7C /* BubbleWrapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC07C129162DEEA40001DC7C /* BubbleWrapViewController.m */; };
 		DC1CA8731628CFA40017971D /* NibViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC1CA8721628CFA40017971D /* NibViewController.m */; };
 		DC1CA8791628DD0D0017971D /* ModalNibViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC1CA8771628DD0D0017971D /* ModalNibViewController.xib */; };
 		DC1CA87E1628DD860017971D /* ModalNibViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC1CA87D1628DD860017971D /* ModalNibViewController.m */; };
@@ -31,6 +32,8 @@
 /* Begin PBXFileReference section */
 		DC07C120162CA4000001DC7C /* ByHandViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ByHandViewController.h; sourceTree = "<group>"; };
 		DC07C121162CA4000001DC7C /* ByHandViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ByHandViewController.m; sourceTree = "<group>"; };
+		DC07C128162DEEA40001DC7C /* BubbleWrapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BubbleWrapViewController.h; sourceTree = "<group>"; };
+		DC07C129162DEEA40001DC7C /* BubbleWrapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BubbleWrapViewController.m; sourceTree = "<group>"; };
 		DC1CA8701628CF430017971D /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		DC1CA8711628CFA40017971D /* NibViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NibViewController.h; sourceTree = "<group>"; };
 		DC1CA8721628CFA40017971D /* NibViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NibViewController.m; sourceTree = "<group>"; };
@@ -136,6 +139,8 @@
 				DC38D3A11625EA3700E5D8B2 /* MainViewController.m */,
 				DC07C120162CA4000001DC7C /* ByHandViewController.h */,
 				DC07C121162CA4000001DC7C /* ByHandViewController.m */,
+				DC07C128162DEEA40001DC7C /* BubbleWrapViewController.h */,
+				DC07C129162DEEA40001DC7C /* BubbleWrapViewController.m */,
 				DC38D3891625EA3700E5D8B2 /* Supporting Files */,
 			);
 			path = "URUG Motion";
@@ -234,6 +239,7 @@
 				DC1CA8731628CFA40017971D /* NibViewController.m in Sources */,
 				DC1CA87E1628DD860017971D /* ModalNibViewController.m in Sources */,
 				DC07C122162CA4000001DC7C /* ByHandViewController.m in Sources */,
+				DC07C12A162DEEA40001DC7C /* BubbleWrapViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
