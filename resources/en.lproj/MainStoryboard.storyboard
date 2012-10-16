@@ -149,10 +149,10 @@
             </objects>
             <point key="canvasLocation" x="868" y="724"/>
         </scene>
-        <!--Teacup View Controller-->
+        <!--Simple View Controller-->
         <scene sceneID="AXi-b9-2BS">
             <objects>
-                <viewController storyboardIdentifier="Teacup" useStoryboardIdentifierAsRestorationIdentifier="YES" id="6tF-Qm-y3t" customClass="TeacupViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Simple" useStoryboardIdentifierAsRestorationIdentifier="YES" id="6tF-Qm-y3t" customClass="SimpleViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hGc-Rw-R5h">
                         <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -229,7 +229,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Teacup" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="zb6-ku-z3Z">
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="SimpleView" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="zb6-ku-z3Z">
                                                     <rect key="frame" x="10" y="0.0" width="300" height="43"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
