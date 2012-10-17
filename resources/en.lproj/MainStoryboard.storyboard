@@ -181,7 +181,7 @@
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Svc-xT-qYr">
                                 <color key="tintColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <items>
-                                    <navigationItem title="BubbleWrap" id="3bb-fJ-wr9">
+                                    <navigationItem title="BubbleWrap &amp; NanoStore" id="3bb-fJ-wr9">
                                         <barButtonItem key="leftBarButtonItem" image="list.png" id="pOw-3q-uaq">
                                             <connections>
                                                 <action selector="revealMenu:" destination="JHC-z0-iIJ" id="fIe-sU-HXE"/>
@@ -294,7 +294,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="BubbleWrap" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="W4G-uf-TN9">
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="BubbleWrap &amp; NanoStore" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="W4G-uf-TN9">
                                                     <rect key="frame" x="10" y="0.0" width="300" height="43"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>

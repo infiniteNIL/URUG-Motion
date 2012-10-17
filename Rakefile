@@ -15,5 +15,6 @@ Motion::Project::App.setup do |app|
     pod 'ECSlidingViewController'
     pod 'RaptureXML'
     pod 'SVProgressHUD'
+    pod 'NanoStore', '~> 2.1.4'
   end
 end

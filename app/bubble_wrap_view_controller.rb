@@ -23,6 +23,19 @@ class BubbleWrapViewController < MainViewController
 
       SVProgressHUD.dismiss
       tableView.reloadData
+
+      save_pages
+    end
+  end
+
+  def save_pages
+    NanoStore.shared_store = NanoStore.store(:file, App.documents_path + "/pages.db") # persist the data
+    begin
+      NanoStore.shared_store.transaction do |store|
+        @pages.each {|page| page.save}
+      end
+    rescue
+      puts "An error occurred saving the pages"
     end
   end
 

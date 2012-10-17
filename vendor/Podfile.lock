@@ -1,16 +1,20 @@
 
 PODS:
 - ECSlidingViewController (0.9.0)
+- NanoStore (2.1.5)
 - RaptureXML (1.0.0)
 - SVProgressHUD (0.8)
 
 DEPENDENCIES:
 - ECSlidingViewController
+- NanoStore (~> 2.1.4)
+- NanoStore (~> 2.1.5)
 - RaptureXML
 - SVProgressHUD
 
 SPEC CHECKSUMS:
   ECSlidingViewController: 87676976e3bf717e058f032eb161890d5e6350ca
+  NanoStore: 440272829dfe13db7f1c68de74fc3562475463fe
   RaptureXML: 27e5268d0a6f926ef49e59ccadc900530428ed07
   SVProgressHUD: 51042a14e3a716efdbdd73cbb2181fb23ee94389
 

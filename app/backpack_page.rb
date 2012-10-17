@@ -1,8 +1,8 @@
-class BackpackPage
+class BackpackPage < NanoStore::Model
   PROPERTIES = [:title, :scope, :id]
 
   PROPERTIES.each do |prop|
-    attr_accessor prop
+    attribute prop
   end
 
   def initialize(attributes = {})
