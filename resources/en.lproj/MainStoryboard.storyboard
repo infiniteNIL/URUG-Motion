@@ -171,6 +171,13 @@
                         <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="pH3-lc-V9i">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="JHC-z0-iIJ" id="CNv-5K-3HM"/>
+                                    <outlet property="delegate" destination="JHC-z0-iIJ" id="9Hn-GW-g42"/>
+                                </connections>
+                            </tableView>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Svc-xT-qYr">
                                 <color key="tintColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <items>
@@ -186,11 +193,18 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="pH3-lc-V9i" firstAttribute="trailing" secondItem="LBe-at-4aV" secondAttribute="trailing" type="default" id="IxC-eO-Us6"/>
                             <constraint firstItem="Svc-xT-qYr" firstAttribute="trailing" secondItem="LBe-at-4aV" secondAttribute="trailing" type="default" id="Jbw-pL-fQd"/>
+                            <constraint firstItem="pH3-lc-V9i" firstAttribute="top" secondItem="Svc-xT-qYr" secondAttribute="bottom" type="default" id="VRt-VR-MO1"/>
+                            <constraint firstItem="pH3-lc-V9i" firstAttribute="bottom" secondItem="LBe-at-4aV" secondAttribute="bottom" type="default" id="Wji-gT-apb"/>
+                            <constraint firstItem="pH3-lc-V9i" firstAttribute="leading" secondItem="LBe-at-4aV" secondAttribute="leading" type="default" id="XZZ-ri-J3v"/>
                             <constraint firstItem="Svc-xT-qYr" firstAttribute="top" secondItem="LBe-at-4aV" secondAttribute="top" type="default" id="YbO-PJ-Q4t"/>
                             <constraint firstItem="Svc-xT-qYr" firstAttribute="leading" secondItem="LBe-at-4aV" secondAttribute="leading" type="default" id="aTf-dS-lx2"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="pH3-lc-V9i" id="Vo3-NI-MpC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5eC-Rf-ChP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -371,6 +385,9 @@
     <classes>
         <class className="BubbleWrapViewController" superclassName="MainViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/BubbleWrapViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
+            </relationships>
         </class>
         <class className="ByHandViewController" superclassName="MainViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ByHandViewController.h"/>
@@ -406,7 +423,6 @@
         <class className="WelcomeViewController" superclassName="MainViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/WelcomeViewController.h"/>
             <relationships>
-                <relationship kind="action" name="revealMenu:"/>
                 <relationship kind="action" name="unwindFromConfirmationForm:" candidateClass="UIStoryboardSegue"/>
                 <relationship kind="outlet" name="label" candidateClass="UILabel"/>
             </relationships>

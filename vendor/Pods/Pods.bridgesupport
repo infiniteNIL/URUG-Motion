@@ -1,18 +1,22 @@
 <?xml version='1.0'?>
 <signatures version='1.0'>
-<constant declared_type='NSString*' const='true' name='ECSlidingViewTopDidAnchorLeft' type='@'/>
-<constant declared_type='NSString*' const='true' name='ECSlidingViewTopDidAnchorRight' type='@'/>
-<constant declared_type='NSString*' const='true' name='ECSlidingViewTopDidReset' type='@'/>
-<constant declared_type='NSString*' const='true' name='ECSlidingViewUnderLeftWillAppear' type='@'/>
-<constant declared_type='NSString*' const='true' name='ECSlidingViewUnderRightWillAppear' type='@'/>
-<enum value='1' name='ECFixedRevealWidth'/>
-<enum value='0' name='ECFullWidth'/>
-<enum value='0' name='ECLeft'/>
-<enum value='0' name='ECNone'/>
-<enum value='2' name='ECPanning'/>
-<enum value='1' name='ECRight'/>
-<enum value='1' name='ECTapping'/>
-<enum value='2' name='ECVariableRevealWidth'/>
+<constant declared_type='NSString*' type='@' const='true' name='ECSlidingViewTopDidAnchorLeft'/>
+<constant declared_type='NSString*' type='@' const='true' name='ECSlidingViewTopDidAnchorRight'/>
+<constant declared_type='NSString*' type='@' const='true' name='ECSlidingViewTopDidReset'/>
+<constant declared_type='NSString*' type='@' const='true' name='ECSlidingViewUnderLeftWillAppear'/>
+<constant declared_type='NSString*' type='@' const='true' name='ECSlidingViewUnderRightWillAppear'/>
+<enum name='ECFixedRevealWidth' value='1'/>
+<enum name='ECFullWidth' value='0'/>
+<enum name='ECLeft' value='0'/>
+<enum name='ECNone' value='0'/>
+<enum name='ECPanning' value='2'/>
+<enum name='ECRight' value='1'/>
+<enum name='ECTapping' value='1'/>
+<enum name='ECVariableRevealWidth' value='2'/>
+<enum name='SVProgressHUDMaskTypeBlack' value='3'/>
+<enum name='SVProgressHUDMaskTypeClear' value='2'/>
+<enum name='SVProgressHUDMaskTypeGradient' value='4'/>
+<enum name='SVProgressHUDMaskTypeNone' value='1'/>
 <class name='ECSlidingViewController'>
 <method selector='anchorLeftPeekAmount'>
 <retval declared_type='CGFloat' type='f'/>
@@ -27,29 +31,29 @@
 <retval declared_type='CGFloat' type='f'/>
 </method>
 <method selector='anchorTopViewOffScreenTo:'>
-<arg declared_type='ECSide' name='side' index='0' type='i'/>
+<arg declared_type='ECSide' type='i' index='0' name='side'/>
 <retval declared_type='void' type='v'/>
 </method>
 <method selector='anchorTopViewOffScreenTo:animations:onComplete:'>
-<arg declared_type='ECSide' name='side' index='0' type='i'/>
-<arg declared_type='void (^)()' name='animations' index='1' type='@?' function_pointer='true'>
+<arg declared_type='ECSide' type='i' index='0' name='side'/>
+<arg declared_type='void (^)()' type='@?' index='1' function_pointer='true' name='animations'>
 <retval declared_type='void' type='v'/>
 </arg>
-<arg declared_type='void (^)()' name='complete' index='2' type='@?' function_pointer='true'>
+<arg declared_type='void (^)()' type='@?' index='2' function_pointer='true' name='complete'>
 <retval declared_type='void' type='v'/>
 </arg>
 <retval declared_type='void' type='v'/>
 </method>
 <method selector='anchorTopViewTo:'>
-<arg declared_type='ECSide' name='side' index='0' type='i'/>
+<arg declared_type='ECSide' type='i' index='0' name='side'/>
 <retval declared_type='void' type='v'/>
 </method>
 <method selector='anchorTopViewTo:animations:onComplete:'>
-<arg declared_type='ECSide' name='side' index='0' type='i'/>
-<arg declared_type='void (^)()' name='animations' index='1' type='@?' function_pointer='true'>
+<arg declared_type='ECSide' type='i' index='0' name='side'/>
+<arg declared_type='void (^)()' type='@?' index='1' function_pointer='true' name='animations'>
 <retval declared_type='void' type='v'/>
 </arg>
-<arg declared_type='void (^)()' name='complete' index='2' type='@?' function_pointer='true'>
+<arg declared_type='void (^)()' type='@?' index='2' function_pointer='true' name='complete'>
 <retval declared_type='void' type='v'/>
 </arg>
 <retval declared_type='void' type='v'/>
@@ -64,56 +68,56 @@
 <retval declared_type='void' type='v'/>
 </method>
 <method selector='resetTopViewWithAnimations:onComplete:'>
-<arg declared_type='void (^)()' name='animations' index='0' type='@?' function_pointer='true'>
+<arg declared_type='void (^)()' type='@?' index='0' function_pointer='true' name='animations'>
 <retval declared_type='void' type='v'/>
 </arg>
-<arg declared_type='void (^)()' name='complete' index='1' type='@?' function_pointer='true'>
+<arg declared_type='void (^)()' type='@?' index='1' function_pointer='true' name='complete'>
 <retval declared_type='void' type='v'/>
 </arg>
 <retval declared_type='void' type='v'/>
 </method>
 <method selector='setAnchorLeftPeekAmount:'>
-<arg declared_type='CGFloat' name='anchorLeftPeekAmount' index='0' type='f'/>
+<arg declared_type='CGFloat' type='f' index='0' name='anchorLeftPeekAmount'/>
 <retval declared_type='void' type='v'/>
 </method>
 <method selector='setAnchorLeftRevealAmount:'>
-<arg declared_type='CGFloat' name='anchorLeftRevealAmount' index='0' type='f'/>
+<arg declared_type='CGFloat' type='f' index='0' name='anchorLeftRevealAmount'/>
 <retval declared_type='void' type='v'/>
 </method>
 <method selector='setAnchorRightPeekAmount:'>
-<arg declared_type='CGFloat' name='anchorRightPeekAmount' index='0' type='f'/>
+<arg declared_type='CGFloat' type='f' index='0' name='anchorRightPeekAmount'/>
 <retval declared_type='void' type='v'/>
 </method>
 <method selector='setAnchorRightRevealAmount:'>
-<arg declared_type='CGFloat' name='anchorRightRevealAmount' index='0' type='f'/>
+<arg declared_type='CGFloat' type='f' index='0' name='anchorRightRevealAmount'/>
 <retval declared_type='void' type='v'/>
 </method>
 <method selector='setResetStrategy:'>
-<arg declared_type='ECResetStrategy' name='resetStrategy' index='0' type='i'/>
+<arg declared_type='ECResetStrategy' type='i' index='0' name='resetStrategy'/>
 <retval declared_type='void' type='v'/>
 </method>
 <method selector='setShouldAllowUserInteractionsWhenAnchored:'>
-<arg declared_type='BOOL' name='shouldAllowUserInteractionsWhenAnchored' index='0' type='B'/>
+<arg declared_type='BOOL' type='B' index='0' name='shouldAllowUserInteractionsWhenAnchored'/>
 <retval declared_type='void' type='v'/>
 </method>
 <method selector='setTopViewController:'>
-<arg declared_type='UIViewController*' name='topViewController' index='0' type='@'/>
+<arg declared_type='UIViewController*' type='@' index='0' name='topViewController'/>
 <retval declared_type='void' type='v'/>
 </method>
 <method selector='setUnderLeftViewController:'>
-<arg declared_type='UIViewController*' name='underLeftViewController' index='0' type='@'/>
+<arg declared_type='UIViewController*' type='@' index='0' name='underLeftViewController'/>
 <retval declared_type='void' type='v'/>
 </method>
 <method selector='setUnderLeftWidthLayout:'>
-<arg declared_type='ECViewWidthLayout' name='underLeftWidthLayout' index='0' type='i'/>
+<arg declared_type='ECViewWidthLayout' type='i' index='0' name='underLeftWidthLayout'/>
 <retval declared_type='void' type='v'/>
 </method>
 <method selector='setUnderRightViewController:'>
-<arg declared_type='UIViewController*' name='underRightViewController' index='0' type='@'/>
+<arg declared_type='UIViewController*' type='@' index='0' name='underRightViewController'/>
 <retval declared_type='void' type='v'/>
 </method>
 <method selector='setUnderRightWidthLayout:'>
-<arg declared_type='ECViewWidthLayout' name='underRightWidthLayout' index='0' type='i'/>
+<arg declared_type='ECViewWidthLayout' type='i' index='0' name='underRightWidthLayout'/>
 <retval declared_type='void' type='v'/>
 </method>
 <method selector='shouldAllowUserInteractionsWhenAnchored'>
@@ -144,9 +148,220 @@
 <retval declared_type='ECViewWidthLayout' type='i'/>
 </method>
 </class>
+<class name='RXMLElement'>
+<method selector='attribute:'>
+<arg declared_type='NSString*' type='@' index='0' name='attributeName'/>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='attribute:inNamespace:'>
+<arg declared_type='NSString*' type='@' index='0' name='attributeName'/>
+<arg declared_type='NSString*' type='@' index='1' name='ns'/>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='attributeAsDouble:'>
+<arg declared_type='NSString*' type='@' index='0' name='attributeName'/>
+<retval declared_type='double' type='d'/>
+</method>
+<method selector='attributeAsDouble:inNamespace:'>
+<arg declared_type='NSString*' type='@' index='0' name='attributeName'/>
+<arg declared_type='NSString*' type='@' index='1' name='ns'/>
+<retval declared_type='double' type='d'/>
+</method>
+<method selector='attributeAsInt:'>
+<arg declared_type='NSString*' type='@' index='0' name='attributeName'/>
+<retval declared_type='NSInteger' type='i'/>
+</method>
+<method selector='attributeAsInt:inNamespace:'>
+<arg declared_type='NSString*' type='@' index='0' name='attributeName'/>
+<arg declared_type='NSString*' type='@' index='1' name='ns'/>
+<retval declared_type='NSInteger' type='i'/>
+</method>
+<method selector='child:'>
+<arg declared_type='NSString*' type='@' index='0' name='tag'/>
+<retval declared_type='RXMLElement*' type='@'/>
+</method>
+<method selector='child:inNamespace:'>
+<arg declared_type='NSString*' type='@' index='0' name='tag'/>
+<arg declared_type='NSString*' type='@' index='1' name='ns'/>
+<retval declared_type='RXMLElement*' type='@'/>
+</method>
+<method selector='children:'>
+<arg declared_type='NSString*' type='@' index='0' name='tag'/>
+<retval declared_type='NSArray*' type='@'/>
+</method>
+<method selector='children:inNamespace:'>
+<arg declared_type='NSString*' type='@' index='0' name='tag'/>
+<arg declared_type='NSString*' type='@' index='1' name='ns'/>
+<retval declared_type='NSArray*' type='@'/>
+</method>
+<method selector='childrenWithRootXPath:'>
+<arg declared_type='NSString*' type='@' index='0' name='xpath'/>
+<retval declared_type='NSArray*' type='@'/>
+</method>
+<method class_method='true' selector='elementFromURL:'>
+<arg declared_type='NSURL*' type='@' index='0' name='url'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method class_method='true' selector='elementFromXMLData:'>
+<arg declared_type='NSData*' type='@' index='0' name='data'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method class_method='true' selector='elementFromXMLFile:'>
+<arg declared_type='NSString*' type='@' index='0' name='filename'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method class_method='true' selector='elementFromXMLFilename:fileExtension:'>
+<arg declared_type='NSString*' type='@' index='0' name='filename'/>
+<arg declared_type='NSString*' type='@' index='1' name='extension'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method class_method='true' selector='elementFromXMLNode:'>
+<arg declared_type='id' type='@' index='0' name='node'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method class_method='true' selector='elementFromXMLString:encoding:'>
+<arg declared_type='NSString*' type='@' index='0' name='xmlString'/>
+<arg declared_type='NSStringEncoding' type='I' index='1' name='encoding'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='initFromURL:'>
+<arg declared_type='NSURL*' type='@' index='0' name='url'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='initFromXMLData:'>
+<arg declared_type='NSData*' type='@' index='0' name='data'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='initFromXMLFile:'>
+<arg declared_type='NSString*' type='@' index='0' name='filename'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='initFromXMLFile:fileExtension:'>
+<arg declared_type='NSString*' type='@' index='0' name='filename'/>
+<arg declared_type='NSString*' type='@' index='1' name='extension'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='initFromXMLNode:'>
+<arg declared_type='id' type='@' index='0' name='node'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='initFromXMLString:encoding:'>
+<arg declared_type='NSString*' type='@' index='0' name='xmlString'/>
+<arg declared_type='NSStringEncoding' type='I' index='1' name='encoding'/>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='isValid'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='iterate:usingBlock:'>
+<arg declared_type='NSString*' type='@' index='0' name='query'/>
+<arg declared_type='void (^)(RXMLElement *)' type='@?' index='1' function_pointer='true' name='blk'>
+<arg declared_type='RXMLElement*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='iterateElements:usingBlock:'>
+<arg declared_type='NSArray*' type='@' index='0' name='elements'/>
+<arg declared_type='void (^)(RXMLElement *)' type='@?' index='1' function_pointer='true' name='blk'>
+<arg declared_type='RXMLElement*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='iterateWithRootXPath:usingBlock:'>
+<arg declared_type='NSString*' type='@' index='0' name='xpath'/>
+<arg declared_type='void (^)(RXMLElement *)' type='@?' index='1' function_pointer='true' name='blk'>
+<arg declared_type='RXMLElement*' type='@'/>
+<retval declared_type='void' type='v'/>
+</arg>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='tag'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='text'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='textAsDouble'>
+<retval declared_type='double' type='d'/>
+</method>
+<method selector='textAsInt'>
+<retval declared_type='NSInteger' type='i'/>
+</method>
+</class>
+<class name='SVProgressHUD'>
+<method class_method='true' selector='dismiss'>
+<retval declared_type='void' type='v'/>
+</method>
+<method class_method='true' selector='dismissWithError:'>
+<arg declared_type='NSString*' type='@' index='0' name='errorString'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method class_method='true' selector='dismissWithError:afterDelay:'>
+<arg declared_type='NSString*' type='@' index='0' name='errorString'/>
+<arg declared_type='NSTimeInterval' type='d' index='1' name='seconds'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method class_method='true' selector='dismissWithSuccess:'>
+<arg declared_type='NSString*' type='@' index='0' name='successString'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method class_method='true' selector='dismissWithSuccess:afterDelay:'>
+<arg declared_type='NSString*' type='@' index='0' name='successString'/>
+<arg declared_type='NSTimeInterval' type='d' index='1' name='seconds'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method class_method='true' selector='isVisible'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method class_method='true' selector='setStatus:'>
+<arg declared_type='NSString*' type='@' index='0' name='string'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method class_method='true' selector='show'>
+<retval declared_type='void' type='v'/>
+</method>
+<method class_method='true' selector='showErrorWithStatus:'>
+<arg declared_type='NSString*' type='@' index='0' name='string'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method class_method='true' selector='showErrorWithStatus:duration:'>
+<arg declared_type='NSString*' type='@' index='0' name='string'/>
+<arg declared_type='NSTimeInterval' type='d' index='1' name='duration'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method class_method='true' selector='showImage:status:'>
+<arg declared_type='UIImage*' type='@' index='0' name='image'/>
+<arg declared_type='NSString*' type='@' index='1' name='status'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method class_method='true' selector='showSuccessWithStatus:'>
+<arg declared_type='NSString*' type='@' index='0' name='string'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method class_method='true' selector='showSuccessWithStatus:duration:'>
+<arg declared_type='NSString*' type='@' index='0' name='string'/>
+<arg declared_type='NSTimeInterval' type='d' index='1' name='duration'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method class_method='true' selector='showWithMaskType:'>
+<arg declared_type='SVProgressHUDMaskType' type='I' index='0' name='maskType'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method class_method='true' selector='showWithStatus:'>
+<arg declared_type='NSString*' type='@' index='0' name='status'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method class_method='true' selector='showWithStatus:maskType:'>
+<arg declared_type='NSString*' type='@' index='0' name='status'/>
+<arg declared_type='SVProgressHUDMaskType' type='I' index='1' name='maskType'/>
+<retval declared_type='void' type='v'/>
+</method>
+</class>
 <class name='UIImage'>
-<method selector='imageWithUIView:' class_method='true'>
-<arg declared_type='UIView*' name='view' index='0' type='@'/>
+<method class_method='true' selector='imageWithUIView:'>
+<arg declared_type='UIView*' type='@' index='0' name='view'/>
 <retval declared_type='UIImage*' type='@'/>
 </method>
 </class>

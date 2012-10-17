@@ -10,6 +10,8 @@
 
 @interface BubbleWrapViewController ()
 
+@property (nonatomic, weak) IBOutlet UITableView *tableView;
+
 @end
 
 @implementation BubbleWrapViewController

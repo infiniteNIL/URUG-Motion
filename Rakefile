@@ -13,5 +13,7 @@ Motion::Project::App.setup do |app|
 
   app.pods do
     pod 'ECSlidingViewController'
+    pod 'RaptureXML'
+    pod 'SVProgressHUD'
   end
 end
