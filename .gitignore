@@ -29,3 +29,4 @@ resources/*.storyboardc
 /.dat39c5.002
 /xcode/URUG Motion.xcodeproj/project.xcworkspace/xcuserdata/rod.xcuserdatad/UserInterfaceState.xcuserstate
 .dat*
+/build
