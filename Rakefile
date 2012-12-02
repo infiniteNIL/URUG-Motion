@@ -8,8 +8,8 @@ Motion::Project::App.setup do |app|
   # Use `rake config' to see complete project settings.
   app.name = 'URUG Motion'
 
-  app.files_dependencies 'app/by_hand_view_controller.rb' => 'app/main_view_controller.rb',
-    'app/bubble_wrap_view_controller.rb' => 'app/main_view_controller.rb'
+#  app.files_dependencies 'app/by_hand_view_controller.rb' => 'app/main_view_controller.rb',
+#    'app/bubble_wrap_view_controller.rb' => 'app/main_view_controller.rb'
 
   app.pods do
     pod 'ECSlidingViewController'

@@ -1,2 +1,0 @@
-class DummyProgressHUD < SVProgressHUD
-end

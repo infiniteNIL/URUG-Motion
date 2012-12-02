@@ -30,3 +30,4 @@ resources/*.storyboardc
 /xcode/URUG Motion.xcodeproj/project.xcworkspace/xcuserdata/rod.xcuserdatad/UserInterfaceState.xcuserstate
 .dat*
 /build
+ib.xcodeproj

@@ -1,11 +1,12 @@
 class NibViewController < MainViewController
+  extend IB
 
-  attr_accessor :label
+  outlet :label, UILabel
 
 	def showNib(sender)
 		vc = ModalNibViewController.new
 		presentViewController(vc, animated:true, completion:nil)
-    @label.textColor = UIColor.redColor;
+    @label.textColor = UIColor.redColor
 	end
 
 end

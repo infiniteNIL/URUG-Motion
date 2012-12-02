@@ -1,6 +1,7 @@
 class WelcomeViewController < MainViewController
+  extend IB
 
-  attr_accessor :label
+  outlet :label, UILabel
 
   def unwindFromConfirmationForm(storyboard)
     @label.text = 'And your back'
